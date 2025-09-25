@@ -1,0 +1,148 @@
+<!--Created and Designed by Aurora Carvalho 2025.2-->
+<!--DO NOT DELETE THE CREDITS-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Numeral System Conversor</h1>
+    </header>
+    <main>
+        <nav>
+            <a onclick="clearFields()" href="#decimal">Decimal</a>
+            <a onclick="clearFields()" href="#binary">Binary</a>
+            <a onclick="clearFields()" href="#octal">Octal</a>
+            <a onclick="clearFields()" href="#hexadecimal">Hexadecimal</a>
+        </nav>
+
+
+        <section id="decimal">
+            <div class="container">
+                <div class="form">
+                    <p class="ipt_txt">Enter decimal number:<br></p>
+                    <p id="error_decimal" class="error">Invalid decimal number (use digits 0-9 only)</p>
+                    <input class="ipt_in" type="number" id="ipt_decimal"><br>
+                    <button onclick="convert('decimal')" id="convert_1">Convert</button>
+                </div>
+                <div>
+                    <div class="outputs" id="output_decimal">
+                        <div class="out_layout">
+                            <p>Binary</p>
+                            <div id="dc_binary_output" class="output_box"></div>
+                        </div>
+                        <div class="out_layout">
+                            <p>Octal</p>
+                            <div id="dc_octal_output" class="output_box"></div>
+                        </div>
+                        <div class="out_layout">
+                            <p>Hexadecimal</p>
+                            <div id="dc_hexadecimal_output" class="output_box"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="binary">
+            <div class="container">
+                <div class="form">
+                    <p class="ipt_txt">Enter binary number:<br></p>
+                    <p id="error_binary" class="error">Invalid binary number (use digits 0-1 only)</p>
+                    <input class="ipt_in" type="number" id="ipt_binary"><br>
+                    <button onclick="convert('binary')" id="convert_2">Convert</button>
+                </div>
+                <div>
+                    <div class="outputs" id="output_binary">
+                        <div class="out_layout">
+                            <p>Decimal</p>
+                            <div id="bi_decimal_output" class="output_box"></div>
+                        </div>
+                        <div class="out_layout">
+                            <p>Octal</p>
+                            <div id="bi_octal_output" class="output_box"></div>
+                        </div>
+                        <div class="out_layout">
+                            <p>Hexadecimal</p>
+                            <div id="bi_hexadecimal_output" class="output_box"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="octal">
+            <div class="container">
+                <div class="form">
+                    <p class="ipt_txt">Enter octal number:<br></p>
+                    <p id="error_octal" class="error">Invalid octal number (use digits 0-7 only)</p>
+                    <input class="ipt_in" type="number" id="ipt_octal"><br>
+                    <button onclick="convert('octal')" id="convert_4">Convert</button>
+                </div>
+                <div>
+                    <div class="outputs" id="output_hexadecimal">
+                        <div class="out_layout">
+                            <p>Decimal</p>
+                            <div id="oc_decimal_output" class="output_box"></div>
+                        </div>
+                        <div class="out_layout">
+                            <p>Binary</p>
+                            <div id="oc_binary_output" class="output_box"></div>
+                        </div>
+                        <div class="out_layout">
+                            <p>Hexadecimal</p>
+                            <div id="oc_hexadecimal_output" class="output_box"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="hexadecimal">
+            <div class="container">
+                <div class="form">
+                    <p class="ipt_txt">Enter hexadecimal number:<br></p>
+                    <p id="error_hex" class="error">Invalid Hexadecimal number (use digits 0-9 and letters A-F only)</p>
+                    <input class="ipt_in" type="text" id="ipt_hexadecimal"><br>
+                    <button onclick="convert('hexadecimal')" id="convert_4">Convert</button>
+                </div>
+                <div>
+                    <div class="outputs" id="output_hexadecimal">
+                        <div class="out_layout">
+                            <p>Decimal</p>
+                            <div id="hex_decimal_output" class="output_box"></div>
+                        </div>
+                        <div class="out_layout">
+                            <p>Binary</p>
+                            <div id="hex_binary_output" class="output_box"></div>
+                        </div>
+                        <div class="out_layout">
+                            <p>Octal</p>
+                            <div id="hex_octal_output" class="output_box"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <span id="footer">developed and designed by aurora-carvalhoi
+            <a href="https://github.com/aurora-carvalhoi" target="_blank">
+                <img src="img/github-icon.png">
+            </a>
+        </span>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,299 @@
+/*designed and developed by Aurora Carvalho, do not remove credits*/
+section {
+    display: none;
+}
+
+/* This attribute makes just the selected section to show up */
+section:target {
+    display: block;
+}
+
+nav {
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 780px;
+    height: 45px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    flex-shrink: 0;
+}
+
+nav a {
+    text-decoration: none;
+    /* deleting the standard underline of nav tag */
+    /*layout*/
+    display: flex;
+    width: 180px;
+    height: 45px;
+    padding: 10px 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    /*style*/
+    text-transform: uppercase;
+    color: #CB2564;
+    text-align: center;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    flex-shrink: 0;
+    border-radius: 200px;
+    background: #FFF;
+    box-shadow: 6px 5px 5px 0 #f36da038;
+    /*offset x, offset y and blur*/
+}
+
+nav a:hover {
+    /*when you have your mouse over the nav menu*/
+    background: #FFB6D2;
+}
+
+
+main {
+    flex: 1;
+    /* adjusts the empty space and pushes footer down */
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(180deg, #ffb6d238 25%, #e4347738 71.15%), #FFF no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    /*vh stands for viewport height*/
+    gap: 20px;
+    /* gap between item groups */
+}
+
+
+/* Target applies to the section, not the link <a>.
+   So we use body:has(#id:target) to highlight the nav link
+   whose href matches that section */
+body:has(#decimal:target) nav a[href="#decimal"],
+body:has(#binary:target) nav a[href="#binary"],
+body:has(#octal:target) nav a[href="#octal"],
+body:has(#hexadecimal:target) nav a[href="#hexadecimal"] {
+    background: #E43477;
+    color: #FFF;
+}
+
+header h1 {
+    text-align: center;
+    font-family: 'Playfair Display';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 2px;
+    color: #CB2564;
+    margin-bottom: -20px;
+}
+
+.container {
+    /*layout*/
+    margin: 40px auto;
+    display: flex;
+    width: 900px;
+    height: 358px;
+    padding: 40px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    flex-shrink: 0;
+    /*style*/
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 6px 10px 5px 0 #f36da038;
+}
+
+.ipt_txt {
+    /*style for body titles*/
+    color: #CB2564;
+    text-align: center;
+    font-family: 'Lato';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: nomal;
+    margin-bottom: 10px;
+}
+
+.ipt_in {
+    /*user input style*/
+    font-family: 'Courier New', monospace;
+    font-size: 18px;
+    color: #CB2564;
+}
+
+input {
+    /*main input layout*/
+    display: flex;
+    width: 350px;
+    height: 20px;
+    padding: 10px 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    /*style*/
+    border-radius: 400px;
+    border: 3px solid #FABDD4;
+    background: #FFF;
+    color: #CB2564;
+}
+
+input:focus {
+    border: 2px solid hotpink;
+    /*changing the standard focus color to hotpink */
+    outline: none;
+}
+
+.error {
+    color: #CB2564;
+    text-align: center;
+    font-family: Lato;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: none;
+}
+
+.form {
+    /*layout for input and button alignment*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+button {
+    /*button layout*/
+    display: flex;
+    width: 180px;
+    height: 45px;
+    padding: 15px 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    /*buttons style*/
+    border: none;
+    border-radius: 20px;
+    background: #f36da038;
+    /*button text layout and style*/
+    text-align: center;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    color: #CB2564;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background: #FFB6D2;
+}
+
+.outputs {
+    /*outputs group layout*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+
+.out_layout {
+    /*alignment of output box and text*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 260px;
+}
+
+.outputs p {
+    /*layout and style for output titles*/
+    text-transform: uppercase;
+    color: #CB2564;
+    text-align: center;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.output_box {
+    /*layout and style for output box*/
+    width: 100%;
+    height: 44px;
+    display: flex;
+    align-items: center;  
+    justify-content: center;
+
+    border-radius: 22px;
+    background: #f36da038;      
+    font-family: "Courier New", monospace;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #CB2564;
+}
+
+
+footer {
+    /*footer layout and style*/
+    display: flex;
+    width: 100%;
+    height: 50px;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    background-color: #cb256438;
+}
+
+footer span {
+    /*footer text and icon layout*/
+    margin-top: 20px;
+    margin-right: 20px;
+    width: 100%;
+    display: flex;
+    width: 333px;
+    height: 30px;
+    flex-direction: row;
+    justify-content: center;
+    flex-shrink: 0;
+    gap: 5px;
+    /*style*/
+    color: #FFF;
+    text-align: center;
+    font-family: "Playfair Display";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 0.7px;
+
+}
+
+footer img {
+    height: 15px;
+    width: 15px;
+}
