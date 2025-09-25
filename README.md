@@ -40,7 +40,7 @@ A simple web app that converts numbers between **decimal**, **binary**, **octal*
 
 ## 📂 Figma
 
-- **PT-BR prorotype** : https://www.figma.com/design/D58jAky0Hf6zNtx0qdDobM/Conversor-de-Sistemas-Num%C3%A9ricos?node-id=0-1&t=QJd1sx56m9rcZJ5r-1
+- **PT-BR prototype** : https://www.figma.com/design/D58jAky0Hf6zNtx0qdDobM/Conversor-de-Sistemas-Num%C3%A9ricos?node-id=0-1&t=QJd1sx56m9rcZJ5r-1
 
 
 
