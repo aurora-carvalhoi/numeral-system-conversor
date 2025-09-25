@@ -30,6 +30,7 @@ function clearFields() {
     hex_binary_output.innerHTML = ""
     hex_octal_output.innerHTML = ""
 
+    error_decimal.style.display = "none"
     error_binary.style.display = "none"
     error_octal.style.display = "none"
     error_hex.style.display = "none"
