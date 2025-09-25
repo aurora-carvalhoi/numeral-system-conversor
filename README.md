@@ -1,4 +1,4 @@
-# Number System Converter
+# Numeral System Conversor
 
 A simple web app that converts numbers between **decimal**, **binary**, **octal**, and **hexadecimal**, with basic validations and error messages.
 
