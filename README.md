@@ -23,11 +23,11 @@ A simple web app that converts numbers between **decimal**, **binary**, **octal*
 
 ## 🧪 Manual Test Checklist
 
-- [ ] `DEC 0` → `BIN 0` · `OCT 0` · `HEX 0`
-- [ ] `DEC 255` → `BIN 11111111` · `OCT 377` · `HEX FF`
-- [ ] `BIN 0001010` → `DEC 10` (leading zeros)
-- [ ] `HEX ff` (case-insensitive) → `DEC 255`
-- [ ] Invalid inputs show the **correct error message**
+- [X] `DEC 0` → `BIN 0` · `OCT 0` · `HEX 0`
+- [X] `DEC 255` → `BIN 11111111` · `OCT 377` · `HEX FF`
+- [X] `BIN 0001010` → `DEC 10` (leading zeros)
+- [X] `HEX ff` (case-insensitive) → `DEC 255`
+- [X] Invalid inputs show the **correct error message**
 
 ---
 
